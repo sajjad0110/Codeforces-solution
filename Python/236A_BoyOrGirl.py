@@ -3,7 +3,7 @@
 distinct_character % 2 != 0 : male
 distinct_character % 2 == 0 : female
 """
-
+"""
 name = list(input())
 name.sort()
 dist_char = 0
@@ -15,6 +15,15 @@ for i in range(1, len(name)):
 print(dist_char)
 
 if dist_char % 2 == 0:
+    print("CHAT WITH HER!")
+else:
+    print("IGNORE HIM!")
+"""
+# alternative method
+
+name = input()
+
+if len(set(name)) % 2 == 0:
     print("CHAT WITH HER!")
 else:
     print("IGNORE HIM!")
